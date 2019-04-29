@@ -5,12 +5,12 @@ class HomePageLocators(object):
     """A class for main page locators"""
 
     CHOOSE_LOCAL = (By.XPATH, '//a[@data-toggle="dropdown"]')
-    CHOOSE_KATOWICE = (By.XPATH,'//*[@id="bs-example-navbar-collapse-1"]/ul/li/ul/li[5]/a')
+    CHOOSE_KATOWICE = (By.CSS_SELECTOR,'ul.dropdown-menu li:nth-child(4)')
 
 class KatowicePageLocators(object):
     """A class for Katowice page locators."""
 
-    RESERVATION_BTN = (By.XPATH, '/html/body/div[4]/div[1]/div/ul/li[4]/a')
+    RESERVATION_BTN = (By.XPATH,'//ul[@class="nav"]["Rezerwacja"]')
 
 class RegisterPageLocators(object):
     """A class for search results register locators."""
@@ -24,7 +24,7 @@ class RegisterPageLocators(object):
     ENDHOUR_FIELD = (By.NAME, 'endHour')
     ENDMINUTES_FIELD = (By.NAME, 'endMinute')
     DATE_FIELD = (By.NAME, 'date')
-    DATE_CHOSEN_FIELD = (By.XPATH, '//*[@id="ui-datepicker-div"]/table/tbody/tr[4]/td[5]/a')
+    DATE_CHOSEN_FIELD = (By.XPATH, '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[1]/a')
     RESERVE_FIELD = (By.XPATH, '//input[@value="Rezerwuj"]')
 
 

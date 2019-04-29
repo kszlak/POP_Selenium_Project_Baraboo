@@ -8,5 +8,7 @@ import time
 class KatowicePage(BasePage):
 
     def click_reserv_button(self):
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(KatowicePageLocators.RESERVATION_BTN))
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(KatowicePageLocators.RESERVATION_BTN))
         element = self.driver.find_element(*KatowicePageLocators.RESERVATION_BTN)
         element.click()
