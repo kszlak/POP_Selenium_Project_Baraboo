@@ -6,7 +6,6 @@ from pages.home_page import HomePage
 from pages.katowice_page import KatowicePage
 from pages.register_page import RegisterPage
 from pages.conf_page import ConfPage
-import time
 import test_data.customer_data as td
 
 
@@ -25,10 +24,6 @@ class BarabooRegistration(unittest.TestCase):
     @classmethod
     def tearDownClass(self):
         self.driver.quit()
-
-    #def test_page_veryfication(self):
-        #home_page = HomePage(self.driver)
-        #home_page._verify_page()
 
     def test_correct_registration(self):
         home_page = HomePage(self.driver)
@@ -53,6 +48,6 @@ class BarabooRegistration(unittest.TestCase):
         register_page.click_reserve_field()
         conf_page = ConfPage(self.driver)
         conf_page.check_registration()
-        
+
 if __name__ == "__main__":
     unittest.main()

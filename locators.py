@@ -3,18 +3,13 @@ from selenium.webdriver.common.by import By
 import datetime
 
 class HomePageLocators(object):
-    """A class for main page locators"""
-
     CHOOSE_LOCAL = (By.XPATH, '//a[@data-toggle="dropdown"]')
     CHOOSE_KATOWICE = (By.CSS_SELECTOR,'ul.dropdown-menu li:nth-child(4)')
 
 class KatowicePageLocators(object):
-    """A class for Katowice page locators."""
-
     RESERVATION_BTN = (By.XPATH,'//ul[@class="nav"]["Rezerwacja"]')
 
 class RegisterPageLocators(object):
-    """A class for search results register locators."""
     NAME_FIELD = (By.NAME, 'name')
     LASTNAME_FIELD = (By.NAME, 'surname')
     EMAIL_FIELD = (By.NAME, 'email')
@@ -25,12 +20,11 @@ class RegisterPageLocators(object):
     ENDHOUR_FIELD = (By.NAME, 'endHour')
     ENDMINUTES_FIELD = (By.NAME, 'endMinute')
     DATE_FIELD = (By.NAME, 'date')
+    #Pick current day of the month
     today = datetime.datetime.today().day
-
     DATE_CHOSEN_FIELD = (By.XPATH, '//a[@class="ui-state-default ui-state-highlight ui-state-hover"]["+today+"]')
     RESERVE_FIELD = (By.XPATH, '//input[@value="Rezerwuj"]')
 
 
 class ConfPageLocators(object):
-    """A class for search results confirmation locators."""
     CONFIRMATION_BUTTON = (By.XPATH, '//a[@class="ok-button"]')

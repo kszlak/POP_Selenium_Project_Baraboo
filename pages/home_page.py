@@ -3,7 +3,6 @@ from base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 class HomePage(BasePage):
 
@@ -17,7 +16,7 @@ class HomePage(BasePage):
         el.click()
 
     def click_choose_katowice(self):
-        #WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(HomePageLocators.CHOOSE_KATOWICE))
-        #WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(HomePageLocators.CHOOSE_KATOWICE))
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(HomePageLocators.CHOOSE_KATOWICE))
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(HomePageLocators.CHOOSE_KATOWICE))
         el2 = self.driver.find_element(*HomePageLocators.CHOOSE_KATOWICE)
         el2.click()
