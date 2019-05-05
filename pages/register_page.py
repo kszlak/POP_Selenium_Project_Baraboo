@@ -48,6 +48,8 @@ class RegisterPage(BasePage):
         element.click()
 
     def click_datechosen_field(self):
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(RegisterPageLocators.DATE_CHOSEN_FIELD))
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(RegisterPageLocators.DATE_CHOSEN_FIELD))
         element = self.driver.find_element(*RegisterPageLocators.DATE_CHOSEN_FIELD)
         element.click()
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.common.by import By
+import datetime
 
 class HomePageLocators(object):
     """A class for main page locators"""
@@ -24,7 +25,9 @@ class RegisterPageLocators(object):
     ENDHOUR_FIELD = (By.NAME, 'endHour')
     ENDMINUTES_FIELD = (By.NAME, 'endMinute')
     DATE_FIELD = (By.NAME, 'date')
-    DATE_CHOSEN_FIELD = (By.XPATH, '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[1]/a')
+    today = datetime.datetime.today().day
+
+    DATE_CHOSEN_FIELD = (By.XPATH, '//a[@class="ui-state-default ui-state-highlight ui-state-hover"]["+today+"]')
     RESERVE_FIELD = (By.XPATH, '//input[@value="Rezerwuj"]')
 
 
