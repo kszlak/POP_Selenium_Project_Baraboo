@@ -13,9 +13,9 @@
 
 1. Open the browser
 2. Go to the website http://www.baraboo.pl/
-3. Click "WYBIERZ LOKAL"
-4. Choose "KATOWICE MARIACKA"
-5. Click "REZERWACJA"
+3. Click WYBIERZ LOKAL
+4. Choose KATOWICE MARIACKA
+5. Click REZERWACJA
 6. Add name
 7. Add surname
 8. Add the e-mail address
