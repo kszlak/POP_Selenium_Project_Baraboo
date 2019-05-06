@@ -1,6 +1,6 @@
 *This is a small project that was created during post-graduate studies.*
 
-Project subject:
+*Project subject:*
 #### Test case automation using Selenium WebDriver and Page Object Pattern ####
 
 
@@ -11,22 +11,24 @@ Project subject:
 * **Steps:**
 
 
-1. Open the Chrome browser
+1. Open the browser
 2. Go to the website http://www.baraboo.pl/
-3. Click "CHOOSE A LOCAL"
+3. Click "WYBIERZ LOKAL"
 4. Choose "KATOWICE MARIACKA"
-5. Click "RESERVATION"
-6. Enter the name
-7. Enter the name
-8. Enter the e-mail address
-9. Enter the phone
-10. Enter the number of people
-11. Enter the start time
-12. Enter the ending time
+5. Click "REZERWACJA"
+6. Add name
+7. Add surname
+8. Add the e-mail address
+9. Add the phone number
+10. Add the number of people
+11. Add the start time
+12. Add the ending time
 13. Select the current date
-14. Click RESERVE
-Expected result: Displays the booking confirmation page with the "Confirm data and book" button visible.
+14. Click REZERWUJ
+
+
+* **Expected result:** Displays the booking confirmation page with the "Potwierdź dane i rezerwuj" button.
 
 
 * **Final remarks:**
-Automation of the test case was successful. The case has not been deliberately finished by finalizing table reservations, so as not to generate artificial booking. After making a small change and ending the test with the booking, the case could be used as part of the regression tests - checking if one of the basic functions (table booking) is going correctly.
+Automation of the test case was successful. The case hasn't been deliberately finished not to generate artificial booking. After making a small change and ending the test case with the full booking, the case could be used as part of the regression tests - checking if one of the basic functions (table booking) is going correctly.
